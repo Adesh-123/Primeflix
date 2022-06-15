@@ -1,0 +1,99 @@
+.watch {
+  width: 100vw;
+  height: 80vh;
+  background-color: black;
+    .back {
+      display: flex;
+      align-items: center;
+      position: fixed;
+      top: 10px;
+      left: 10px;
+      color: rgb(4, 33, 193);
+      cursor: pointer;
+      z-index: 2;
+    }
+  
+    .player-wrapper {
+      background-color: black;
+      position: relative;
+      padding-top: 56.25%; /* 720 / 1380 = 0.5625 */
+      display: flex;
+      justify-content: center;
+      align-items: flex-start;
+      // margin-top: 10px;
+
+      .react-player {
+        position: absolute;
+        top: 0;
+        // left: auto;
+      }
+    }
+    .movie_text{
+      display: flex;
+      justify-content: space-between;
+      background-color: black;
+      color: white;
+      div{
+        font-size: 30px;
+        @media screen and (max-width:900px) {
+          font-size: 23px;
+        }
+      }
+      .arrow_style{
+        font-size: 45px;
+        cursor:pointer;
+        @media screen and (max-width:900px){
+          font-size: 35px;
+        }
+      }
+    }
+    .bottom_icons{
+      border-bottom: 1px solid rgb(255, 255, 255);
+      background-color: black;
+      height: 200px;
+      color: white;
+
+      .icons_style{
+        // border:1px solid white;
+        cursor: pointer;
+        display: flex;
+        width:150px;
+        justify-content: space-between;
+
+        .icon_style{
+           font-size: 30px;
+        }
+      }
+      .text_style{
+        margin-top: 5px;
+        display: flex;
+        flex-direction: column;
+        span{
+          font-size: 17px;
+          margin: 3px;
+          @media screen and (max-width:450px){
+            font-size: 15px;
+          }
+        }
+      }
+      .desc_style{
+        font-size: 20px;
+        margin: 3px;
+        @media screen and (max-width:450px){
+          font-size: 15px;
+        }
+      }
+      .genre_style{
+        font-size: 20px;
+        margin: 3px;
+        @media screen and (max-width:450px){
+          font-size: 15px;
+        }
+      }
+    }
+    .bottom_margin{
+      height: 100px;
+      background-color: black;
+    }
+  }
+  

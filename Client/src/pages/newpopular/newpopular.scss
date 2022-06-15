@@ -1,0 +1,19 @@
+.top_box{
+    background-color: black;
+    height: 100px;
+}
+.newpopular_box{
+  width:100%;
+  height: auto;
+  min-height:900px;
+  background-color: black;
+  margin-top: -10px;
+    .movies_list{
+      display: flex;
+      // width: max-content;
+      position: relative;
+      flex-wrap: wrap;
+      padding-left: 10px;
+      justify-content: center;
+  }
+}

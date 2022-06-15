@@ -1,0 +1,163 @@
+.navbar{
+    color:white;
+    font-size: 20px;
+    position: fixed;
+    width: 100%;
+    top:0;
+    z-index: 999;
+    background: linear-gradient(to top,transparent 0% rgb(0,0,0,0.3) 50%);
+
+    &.scrolled{
+        background-color: var(--main-color);
+    }
+    .container{
+        height:70px;
+        padding: 0px 50px;
+        display: flex;
+        align-items: center;
+        justify-content:space-between;
+        
+        .logo_style{
+            display: none;
+            @media screen and (max-width:950px) and(min-width:500px){
+                display: flex;
+                position: absolute;
+                top:-20px;
+                left: 30px;
+                width:130px;
+                height:120px;
+            }
+            @media screen and (max-width:500px){
+                display: flex;
+                position: absolute;
+                top:0px;
+                left: 20px;
+                width:80px;
+                height:70px;
+            }
+        }
+        
+        .left{
+            display: flex;
+            align-items: center;
+            @media screen and (max-width:950px){
+                display: none;         
+            }
+            a{
+                padding:0px 15px;
+                cursor: pointer;
+                &.active{
+                   color:aqua
+                }
+            }
+            img{
+                height:130px;
+                margin-top: 10px;
+            }
+        }
+        .right{
+            display: flex;
+            align-items: center;
+            @media screen and (max-width:950px){
+                display: none;
+            }
+            img{
+                width: 30px;
+                height: 30px;
+                border-radius: 20px;
+                object-fit: cover;
+                cursor: pointer;
+            }
+            .icon{
+                padding:0px 15px;
+                cursor: pointer;
+            }
+            .profile{
+                .option{
+                    display: none;
+                    background-color: var(--main-color);
+                    border-radius: 10px;
+                    font-size: 18px;
+                    // width:60px;
+                }
+                span{
+                    padding:10px;
+                    cursor:pointer;
+                }
+                &:hover{
+                    .option{
+                        display: flex;
+                        flex-direction: column;
+                        position: absolute;
+                    }
+                }
+            }
+        }
+        .bars{
+            display: none;
+            @media screen and (max-width:950px){
+                display: block;
+                cursor: pointer;
+                position: absolute;
+                top: 0;
+                right: 0;
+                transform: translate(-100%, 75%);
+                font-size: 1.8rem;
+            }
+        }
+    }
+    .downbar{
+        transition: all 0.5s ease-out;
+        display: flex;
+        flex-direction: column;
+        height:400px;
+        color: white;
+        background-color: rgb(0, 0, 0);
+        .top_bar{
+            .logo_style{
+                display: none;
+                @media screen and (max-width:950px) and(min-width:500px){
+                    display: flex;
+                    position: absolute;
+                    top:-20px;
+                    left: 30px;
+                    width:130px;
+                    height:120px;
+                }
+                @media screen and (max-width:500px){
+                    display: flex;
+                    position: absolute;
+                    top:0px;
+                    left: 20px;
+                    width:80px;
+                    height:70px;
+                }
+            }
+            .bars{
+                    transition: all 0.5s ease-out;
+                    display: block;
+                    cursor: pointer;
+                    position: absolute;
+                    top: 0;
+                    right: 0;
+                    transform: translate(-100%, 75%);
+                    font-size: 1.8rem;
+            }
+        }
+        .navlink{
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            height:300px;
+            align-items: center;
+            padding:0px 15px;
+            margin-top: 50px;
+            cursor: pointer;
+            a{
+                &.active{
+                    color:aqua
+                }
+            }
+        }
+    }
+}

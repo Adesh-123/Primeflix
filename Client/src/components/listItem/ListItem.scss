@@ -1,0 +1,105 @@
+// .Link{
+//     position: none;
+// }
+.listitem{
+    width:225px;
+    height:130px;
+    background-color: var(--main-color);
+    margin-right: 5px;
+    color:white;
+    // position: absolute;
+    overflow: hidden;
+    cursor: pointer;
+    
+    img{
+       width:100%;
+       height: 100%;
+       object-fit: cover;
+    }
+
+    video{
+      width: 100%;
+      height:140px;
+      object-fit: cover;
+      position: absolute;
+      top: 0;
+      left: 0;
+    }
+
+    &:hover{
+        width:325px;
+        height:290px;
+        -webkit-box-shadow: 0px 0px 8px -2px rgba(255,255,255,0.85); 
+        box-shadow: 0px 0px 8px -2px rgba(255,255,255,0.85);
+        position: absolute;
+        top:-150px;
+        border-radius: 5px;
+        // z-index: 100;
+        img{
+            width:100%;
+            height:140px;
+        }
+        .info{
+           width:100%;
+           display: flex;
+           flex-direction: column;
+           padding: 4px;
+           font-size: 14px;
+           .icons{
+              display: flex;
+              margin-bottom: 3px;
+            .icon{
+                border: 1px solid white;
+                border-radius: 50%;
+                cursor: pointer;
+                margin-right: 8px;
+                padding: 3px;
+            }
+           }
+           .infoTop{
+               display: flex;
+               color:gray;
+               align-items: center;
+               margin-bottom: 3px;
+               .limit{
+                   border: 1px solid gray;
+                   margin:0px 8px;
+               }
+           }
+           .desc{
+               font-size: 15px;
+               font-weight: 500;
+           }
+           .genre{
+               color: gray;
+               font-size: 15px;
+               font-weight: 600;
+           }
+        }
+    }
+}
+.listitem_style{
+    width:125px;
+    height:70px;
+    background-color: var(--main-color);
+    margin-right: 5px;
+    color:white;
+    // position: absolute;
+    overflow: hidden;
+    cursor: pointer;
+    img{
+        width:100%;
+        height: 100%;
+        object-fit: cover;
+    }
+    &:hover{
+        img{display: none;}
+    }
+    video{
+          width:100%;
+          height: 100%;
+    }
+    .info{
+        display: none;
+    }
+}
